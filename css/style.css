@@ -121,7 +121,7 @@ body{
 }
 @media (max-width: 768px) {
    .navbar-brand.logo img{
-      max-width: 170px;
+      max-width: 150px;
    }
 }
 /** Menu Styles end **/
