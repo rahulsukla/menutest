@@ -8,76 +8,143 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,500,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" id="ss-main" type="text/css" media="all" href="css/bootstrap.min.css">
-    <link rel="stylesheet" id="ss-main" type="text/css" media="all" href="css/bootstrap-responsive.min.css">
     <link rel="stylesheet" id="ss-main" type="text/css" media="all" href="css/font-awesome.min.css">
     <link rel="stylesheet" id="ss-main" type="text/css" media="all" href="css/style.css">
     <!--[if lt IE 9]><script src="/assets/js/html5shiv.js"></script><![endif]-->
   </head>
   <body>
-  	<!-- Header Styling-->
-    <div class="outer" id="header">
-      <div class="inner">
-        <header role="header">
-          <div id="header-logo">
-            <h4>
-              <a rel="home" title="Openlabs Technologies " href="index.html">
-                <img src="img/openlabs-logo.png">Openlabs Technologies.</a></h4>
-          </div>
-          <div id="header-nav-control" class="assistive-text hide">
-          	<a href="#primary-navigation" title="Navigation">Navigation</a></div>
-          <a id="a-navigation" name="primary-navigation"></a>
-          <div class="menu-primary-navigation-container">
-            <ul id="menu-primary-navigation" class="menu">
-              <!--Home -->	
-              <li  class="menu-item menu-item-3046 menu-home current-menu-item"><a title="Home" href="index.html">Home</a></li>
-              <!-- Solution Menu -->
-              <li  class="menu-item">
-                <a title="Products" href="products/overview.html">Solutions</a>
-                <ul class="sub-menu">
-                  <li  class="menu-item"><a title="ERP" href="">ERP</a></li>
-                  <li  class="menu-item"><a title="CRM" href=""><i class="icon-tags"></i>CRM</a></li>
-                  <li  class="menu-item"><a title="E-Commerce" href=""><i class=" icon-shopping-cart"></i>E-Commerce</a></li>
-                  <li  class="menu-item"><a title="Mobile" href=""><i class="icon-mobile-phone "></i>Mobile</a></li>
-                </ul>
+      <!-- Header Styling-->
+      <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand logo"><img src="logo.png"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="nav-collapse collapse navbar-responsive-collapse">
+          <!-- THE MENU STARTS HERE -->
+          <div class="mgmenu_container hidden-sm">
+            <!-- Begin Mega Menu Container -->
+            <ul class="mgmenu">
+              <!-- Button (Mobile Devices) -->
+              <li class="right_item">
+                <span>Contact</span><!-- Begin Item -->
+                <div class="dropdown_container dropdown_4columns dropdown_right">
+                  <!-- Begin Item Container -->
+                  <div class="col_12">
+                    <h4>Contact us !</h4>
+                    <div class="contact_form" id="contact_form">
+                      <!-- Begin Contact Form -->
+                      <form method="POST" id="mgmenu_form" action="email.php">
+                        <label for="name">Name<span class="required"> *</span></label><br />
+                        <input class="form_element" type="text" name="name" id="name" />
+                        <label for="email">Email<span class="required"> *</span></label><br />
+                        <input class="form_element" type="text" name="email" id="email" />
+                        <label for="message">Message<span class="required"> *</span></label><br />
+                        <textarea name="message" class="form_element" id="message"></textarea>
+                        <div class="form_buttons">
+                          <input type="submit" class="button" id="submit" value="Submit" />
+                          <input type="reset" class="button" id="reset" value="Reset" />
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End Contact Form -->
+                  </div>
+                </div>
+                <!-- End Item Container -->
               </li>
-
-              <!--Developers Menu -->
-              <li  class="menu-item">
-                <a title="Services" href="products/overview.html">Developers </a>
-                <ul class="sub-menu">
-                  <li  class="menu-item"><a title="Engineering" href=""><i class="icon-gears"></i>Engineering</a></li>
-                  <li  class="menu-item"><a title="Tutorials" href=""><i class="icon-compass"></i>Tutorials</a></li>
-                  <li  class="menu-item"><a title="Documentation" href=""><i class="icon-file-alt"></i>Documentation</a></li>
-                  <li  class="menu-item"><a title="Contribute" href=""><i class="icon-code-fork"></i>Contribute</a></li>
-                </ul>
+              <!-- End Item -->
+              <li class="right_item">
+                <span><a href="">Company</a></span><!-- Begin Company -->
+                <div class="dropdown_container dropdown_10columns ">
+                  <ul class="list-inline">
+                    <li>
+                      <h5><a href="">Clients</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Our Identity</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Community</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Team</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Awards</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Careers</a></h5>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <!-- Partner Menu -->
-              <li  class="menu-item">
-                <a title="Partner" href="products/overview.html">Company</a>
-                <ul class="sub-menu">
-                  <li  class="menu-item"><a title="Clients" href="">Clients</a></li>
-                  <li  class="menu-item"><a title="Our Identity" href="about.html">Our Identity</a></li>
-                  <li  class="menu-item"><a title="Community" href="">Community</a></li>
-                  <li  class="menu-item"><a title="Team" href="team.html">Team</a></li>
-                  <li  class="menu-item"><a title="Awards" href="">Awards</a></li>
-                  <li  class="menu-item"><a title="Careers" href="https://my.openlabs.co.in/en_US/jobs">Careers</a></li>
-                </ul>
+              <!-- End Item -->
+              <li class="right_item">
+                <span><a href="">Developers</a> </span><!-- Begin Developers -->
+                <div class="dropdown_container dropdown_10columns">
+                  <ul class="list-inline">
+                    <li>
+                      <h5><a href="">Engineering</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Tutorials</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Documentations</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Contribute</a></h5>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <!-- Contact-->
-              <li  class="menu-item">
-                <a title="Contact" href="contact.html">Contact</a>
+              <li class="right_item">
+                <span><a href="">Solutions</a></span><!-- Begin Solutions -->
+                <div class="dropdown_container dropdown_10columns">
+                  <ul class="list-inline">
+                    <li>
+                      <h5><a href="">OpenERP</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Tryton</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">CRM</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">E-Commerce</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="">Mobile</a></h5>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
+            <!-- End Mega Menu -->
           </div>
-        </header>
+          <!-- THE MENU ENDS HERE -->
+          <ul class="nav navbar-nav visible-sm">
+            <li class="center"><a href="#">Solutions</a></li>
+            <li class="center"><a href="#">Developers</a></li>
+            <li class="center"><a href="#">Company</a></li>
+            <li class="center"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <ds
+
+        <!-- /.nav-collapse -->
       </div>
     </div>
-    <!--Header Ends Here-->
+    <!--Navbar closed-->
+      <!--Header Ends Here-->
     <!--Parallax Contents Starts Here -->
     <!--Who We are-->
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
       <div class="container">
-        <div class="row-fluid center">
+        <div class="row center">
           <h1 class="white">
             We are custom software experts in the Open Source sphere and craft solutions which ascribe to the distinct elements of a business process. We don’t just build ERP systems, we create ERP systems that bear your signature. 
           </h1>
@@ -87,7 +154,7 @@
     <!--  What we believe ?  -->
     <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
       <div class="container">
-        <div class="row-fluid white">
+        <div class="row white">
           <h2 class="center">What we believe ?</h2>
           <p>
             We believe that every business is different so should be every solution. We take pride in being the patrons of the competitive edge to the businesses of our customers by furnishing tailor-made solutions. Passion is what drives us and we don’t believe in limits, when it comes to innovations. The primary notion of our work philosophy is developing innovative solutions that exceed the expectations of our customers.
@@ -99,20 +166,20 @@
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ration="0.5">
       <div class="container center">
         <h2 class="white"> Our Process</h2>
-        <div class="row-fluid our-process ">
-            <div class="span3">
+        <div class="row our-process ">
+            <div class="col-lg-3">
               <img src="img/about/process/analyse.png">
               <h3>Analyse</h3>
             </div>
-            <div class="span3">
+            <div class="col-lg-3">
               <img src="img/about/process/design.png">
               <h3>Design</h3>
             </div>
-            <div class="span3">
+            <div class="col-lg-3">
               <img src="img/about/process/create.png">
               <h3>Create</h3>
             </div>
-            <div class="span3">
+            <div class="col-lg-3">
               <img src="img/about/process/launch.png">
               <h3>Deliver</h3>
             </div>
@@ -122,11 +189,11 @@
     <!-- Our Technologies  -->
     <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
       <div class="container center">
-        <div class="row-fluid white">
+        <div class="row white">
           <h2>Technologies</h2>
         </div>
-        <div class="row;-fluid">
-          <ul class="inline technology">
+        <div class="row">
+          <ul class="list-inline technology">
             <li>
               <img src="img/about/technology/python.png" align="middle" alt="pyhton">
               <h4 class="white">Python</h4>
@@ -193,7 +260,7 @@
     </div>
     <div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
       <div class="container how-we-work">
-        <div class="row-fluid center white">
+        <div class="row center white">
           <h2 >How We Work</h2>
           <p>We join forces with a diverse group of clients with unique requisites. Work and play hold the same meaning for us as we exist to create technological marvels that are conceptually interesting and visually stunning. Technology is what we breathe and imagine in the work we do. We formulate unconventional ideas and craft them to the desires of our customers.</p>
         </div>
@@ -210,21 +277,21 @@
     <!--Parallax End-->
     <footer>
       <div class="container">
-        <div class="row-fluid white">
-          <div class="span1 ">
+        <div class="row white">
+          <div class="col-lg-1 ">
             <a href="">News</a>
           </div>
-          <div class="span2">
+          <div class="col-lg-2">
             <a href="">We are hiring !!</a>
           </div>
-          <div class="span1 ">
+          <div class="col-lg-1">
             <a href="">About</a>
           </div>
-          <div class="span2">
+          <div class="col-lg-2">
             <a href="">Privacy Policy</a>
           </div>
-          <div class="span6 ">
-            <ul class="inline pull-right">
+          <div class="col-lg-6">
+            <ul class="list-inline pull-right">
               <li><a href=""><i class="icon-facebook"></i></a></li>
               <li><a href=""><i class="icon-twitter"></i></a></li>
               <li><a href=""><i class="icon-google-plus"></i></a></li>
@@ -233,11 +300,11 @@
           </div>
         </div>
           <hr>
-        <div class="row-fluid">
-          <div class="span6">
+        <div class="row">
+          <div class="col-lg-6">
             <p>&copy; Copyright Openlabs Technology & Consulting Pvt. Ltd</p>
           </div>
-          <div class="span6">
+          <div class="col-lg-6">
             <p class="pull-right">Powered by Nereid and Tryton.</p>
           </div>
         </div>

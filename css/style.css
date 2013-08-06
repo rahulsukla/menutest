@@ -4,8 +4,6 @@ Author: Rahul Shukla
 Description: Openlabs Technologies's responsive site
 Version: 1.0
 */
-
-/* reset */
 @font-face {
 	font-family: 'Shadows Into Light Two', cursive;
 	src: url('http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
@@ -19,11 +17,12 @@ body{
 	font-weight: 400;
 	font-smoothing: antialiased;
 	padding: 0;
-    margin: 0; /* necesarry for the raster to fill the screen */
-    height: 100%;
-    width: 100%;
+  margin: 0; /* necesarry for the raster to fill the screen */
+  height: 100%;
+  width: 100%;
 }
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 400;	
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
@@ -45,10 +44,6 @@ font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-family: 'Droid Sans Mono', monospace, sans-serif;
 */
 
-#home{
-	width: 100%;
-	height: 100%;
-}
 .bigTitle {
 font-weight: 800;
 font-size: 5em;
@@ -57,6 +52,7 @@ text-transform: uppercase;
 padding: 0.5em 0;
 text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
+
 h1 small, h2 small, h3 small, h4 small {
 text-transform: none;
 font-size: 0.5em;
@@ -68,7 +64,7 @@ color: inherit;
 
 .mgmenu_container,.mgmenu_fixed,.mgmenu_footer
 {width:100%;min-height:58px;z-index:10;}
-.mgmenu_container{position:relative;margin:0 auto}
+.mgmenu_container{margin:0 auto}
 .mgmenu_fixed,.mgmenu_footer{width:inherit;max-width:inherit;position:fixed;top:0;*width:expression(this.parentNode.currentStyle['width'])}.mgmenu_footer{top:auto;bottom:0}.mgmenu{font-size:13px;list-style:none;padding:0;margin:0;position:relative;line-height:1}
 .mgmenu>li
 {float:left;margin:0;-webkit-transition:background .3s;-moz-transition:background .3s;-o-transition:background .3s;-ms-transition:background .3s;transition:background .3s}
@@ -161,7 +157,6 @@ z-index: 10;
 }
 /*--------------------------About Page-------------
 --------------------------------------------------*/
-
 /*  Slides */ 
 .slide{
 	background-attachment: fixed;
@@ -328,7 +323,7 @@ width: 300px;
 -webkit-border-radius: 2px;
 border-radius: 2px;
 display: none; /** Hide items initially to avoid a flicker effect **/
-  cursor: pointer;
+cursor: pointer;
 padding: 0px;
 webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
@@ -338,6 +333,7 @@ transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
 #tiles li img {
+  max-width: 300px;
 display: block;
 -moz-border-radius: 2px;
 -webkit-border-radius: 2px;
@@ -385,8 +381,8 @@ background-color: rgba(34,34,34,0.4);
 box-sizing: border-box;
 }
 .info h5{
+  margin-bottom: 5px;
 	font-size: 1.3em;
-	line-height: 1.2em;
 	color: white;
 }
 .info{
@@ -481,9 +477,6 @@ box-sizing: border-box;
 
 .wrap h6 {
   font-size: 11.9px;
-}
-.wrap img{
-	padding:1em;
 }
 footer{
 	padding: 40px 0;
@@ -682,4 +675,124 @@ content: '';
 }
 .green{
 	color: green;
+}
+/*Magento Connector Page */
+
+
+.container.styled{
+  padding: 0 3em;
+  background: #fff;
+border: 1px solid #d9d9d9;
+border-top: none;
+border-bottom: none;
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,.3);
+-moz-box-shadow: 0 0 4px rgba(0,0,0,.3);
+box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+h2.item-tilte{
+  font-size: 2.6em;
+  font-weight: 600;
+}
+.templatenav{
+  margin-top: 1.4em;
+}
+.templatenav li a{
+  text-decoration: none;
+  font-size: 1em;
+  color: #373435;
+}
+.templatenav li a.active{
+
+}
+.templatenav li a:hover{
+  color: #A01717;
+}
+.templatenav li a.btn{
+  color: #fff;
+}
+.top-divider{
+background: url(../img/magento/gradient_divider.jpg) no-repeat 50% 100%;
+}
+h1.main-heading{
+  font-size: 3em;
+  padding-bottom: .3em;
+  font-weight: 600;
+}
+p.main-description{
+  font-weight: 600;
+  font-size: 1.2857em;
+  color: #9E9E9E;
+  padding-bottom: 2em;
+}
+.descpad{
+  padding: 2.5em 1em;
+  border-bottom:1px solid #AAA;
+}
+.title-pad{
+  margin-bottom: 1.8em;
+}
+h1.image-title img{
+  padding-right: 5px;
+}
+h1.image-title {
+  font-weight: 300;
+  font-size: 2.2em;
+}
+h1.image-title span{
+  font-weight: 600;
+}
+.descpad p{
+  font-weight: 400;
+  padding:1em 0;
+  font-size: 1.1em;
+}
+.descpad figure figcaption{
+  padding-top: 1.2em;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+img.reflect{
+-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(255,255,255,0) 85%,rgba(255,255,255,.17) 100%);
+}
+.padtop{
+  padding-top: 3em;
+}
+#all-features{
+  padding-top: 5em;
+}
+.pullout{
+  padding: 1em 2em;
+  background: #f2f2f2;
+  border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-o-border-radius: 4px;
+-khtml-border-radius: 4px;
+}
+.inset {
+border: 1px solid #ccc;
+-webkit-box-shadow: inset 0 1px 4px rgba(0,0,0,.4);
+-moz-box-shadow: inset 0 1px 4px rgba(0,0,0,.4);
+box-shadow: inset 0 1px 4px rgba(0,0,0,.4);
+}
+.pullout .media img{
+  margin-top: 1em;
+  margin-right: 20px;
+}
+.pullout h4.media-heading{
+  margin-bottom: 0px;
+}
+.pullout p{
+ padding-top: 8px;
+}
+.pullout a{
+  text-decoration: none;
+  color: #333;
+}
+.pullout a span{
+  color: #08c;
+}
+
+.pullout a span:hover{
+  border-bottom: 1px solid #08c;
 }
