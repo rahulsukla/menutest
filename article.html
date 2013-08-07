@@ -16,21 +16,22 @@
   <body>
       <!-- Header Styling-->
       <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
       <div class="container">
-        <a href="../" class="navbar-brand logo"><img src="logo.png"></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <col-lg- class="icon-bar"></col-lg->
-        <col-lg- class="icon-bar"></col-lg->
-        <col-lg- class="icon-bar"></col-lg->
-        </button>
-        <div class="nav-collapse collapse navbar-responsive-collapse">
+        <a href="/" class="brand"><img src="logo.png"></a>
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse collapse">
           <!-- THE MENU STARTS HERE -->
-          <div class="mgmenu_container hidden-sm">
+          <div class="mgmenu_container visible-desktop">
             <!-- Begin Mega Menu Container -->
             <ul class="mgmenu">
               <!-- Button (Mobile Devices) -->
               <li class="right_item">
-                <col-lg->Contact</col-lg-><!-- Begin Item -->
+                <span>Contact</span><!-- Begin Item -->
                 <div class="dropdown_container dropdown_4columns dropdown_right">
                   <!-- Begin Item Container -->
                   <div class="col_12">
@@ -38,11 +39,11 @@
                     <div class="contact_form" id="contact_form">
                       <!-- Begin Contact Form -->
                       <form method="POST" id="mgmenu_form" action="email.php">
-                        <label for="name">Name<col-lg- class="required"> *</col-lg-></label><br />
+                        <label for="name">Name<span class="required"> *</span></label><br />
                         <input class="form_element" type="text" name="name" id="name" />
-                        <label for="email">Email<col-lg- class="required"> *</col-lg-></label><br />
+                        <label for="email">Email<span class="required"> *</span></label><br />
                         <input class="form_element" type="text" name="email" id="email" />
-                        <label for="message">Message<col-lg- class="required"> *</col-lg-></label><br />
+                        <label for="message">Message<span class="required"> *</span></label><br />
                         <textarea name="message" class="form_element" id="message"></textarea>
                         <div class="form_buttons">
                           <input type="submit" class="button" id="submit" value="Submit" />
@@ -57,9 +58,9 @@
               </li>
               <!-- End Item -->
               <li class="right_item">
-                <col-lg-><a href="">Company</a></col-lg-><!-- Begin Company -->
+                <span><a href="">Company</a></span><!-- Begin Company -->
                 <div class="dropdown_container dropdown_10columns ">
-                  <ul class="list-inline">
+                  <ul class="inline">
                     <li>
                       <h5><a href="">Clients</a></h5>
                     </li>
@@ -83,9 +84,9 @@
               </li>
               <!-- End Item -->
               <li class="right_item">
-                <col-lg-><a href="">Developers</a> </col-lg-><!-- Begin Developers -->
+                <span><a href="">Developers</a> </span><!-- Begin Developers -->
                 <div class="dropdown_container dropdown_10columns">
-                  <ul class="list-inline">
+                  <ul class="inline">
                     <li>
                       <h5><a href="">Engineering</a></h5>
                     </li>
@@ -102,9 +103,9 @@
                 </div>
               </li>
               <li class="right_item">
-                <col-lg-><a href="">Solutions</a></col-lg-><!-- Begin Solutions -->
+                <span><a href="">Solutions</a></span><!-- Begin Solutions -->
                 <div class="dropdown_container dropdown_10columns">
-                  <ul class="list-inline">
+                  <ul class="inline">
                     <li>
                       <h5><a href="">OpenERP</a></h5>
                     </li>
@@ -127,16 +128,15 @@
             <!-- End Mega Menu -->
           </div>
           <!-- THE MENU ENDS HERE -->
-          <ul class="nav navbar-nav visible-sm">
+          <ul class="nav navbar-nav hidden-desktop">
             <li class="center"><a href="#">Solutions</a></li>
             <li class="center"><a href="#">Developers</a></li>
             <li class="center"><a href="#">Company</a></li>
             <li class="center"><a href="#">Contact</a></li>
           </ul>
         </div>
-        <ds
-
         <!-- /.nav-collapse -->
+        </div>
       </div>
     </div>
     <!--Navbar closed-->
@@ -146,13 +146,13 @@
       <div class="container">
         <div class="row">
           <ul class="breadcrumb">
-            <li><a href="#">Home</a> <col-lg- class="divider">/</col-lg-></li>
-            <li><a href="#">Article</a> <col-lg- class="divider">/</col-lg-></li>
+            <li><a href="#">Home</a> <span class="divider">/</span></li>
+            <li><a href="#">Article</a> <span class="divider">/</span></li>
             <li class="active">Current</li>
           </ul>
         </div>
         <div class="row">
-          <div class="col-lg-10">
+          <div class="span10">
             <h1 class="article-heading">Why is lorem Ipsum</h1>
             <p>
               <img src=" http://placehold.it/350x250" class="pull-right">
@@ -160,7 +160,7 @@
             </p>
 
           </div>
-          <div class="col-lg-1">
+          <div class="span1">
             <h2>Links</h2>
             <ul class="list-unstyled">
               <li>
@@ -177,20 +177,20 @@
     <footer>
       <div class="container">
         <div class="row white">
-          <div class="col-lg-1 ">
+          <div class="span1 ">
             <a href="">News</a>
           </div>
-          <div class="col-lg-2">
+          <div class="span2">
             <a href="">We are hiring !!</a>
           </div>
-          <div class="col-lg-1">
+          <div class="span1">
             <a href="">About</a>
           </div>
-          <div class="col-lg-2">
+          <div class="span2">
             <a href="">Privacy Policy</a>
           </div>
-          <div class="col-lg-6">
-            <ul class="list-inline pull-right">
+          <div class="span6">
+            <ul class="inline pull-right">
               <li><a href=""><i class="icon-facebook"></i></a></li>
               <li><a href=""><i class="icon-twitter"></i></a></li>
               <li><a href=""><i class="icon-google-plus"></i></a></li>
@@ -200,10 +200,10 @@
         </div>
           <hr>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="span6">
             <p>&copy; Copyright Openlabs Technology & Consulting Pvt. Ltd</p>
           </div>
-          <div class="col-lg-6">
+          <div class="span6">
             <p class="pull-right">Powered by Nereid and Tryton.</p>
           </div>
         </div>

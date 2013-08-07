@@ -16,10 +16,6 @@ body{
 	line-height: 1.2em;
 	font-weight: 400;
 	font-smoothing: antialiased;
-	padding: 0;
-  margin: 0; /* necesarry for the raster to fill the screen */
-  height: 100%;
-  width: 100%;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-family: 'Open Sans', sans-serif;
@@ -43,7 +39,6 @@ font-family: 'Droid Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-family: 'Droid Sans Mono', monospace, sans-serif;
 */
-
 .bigTitle {
 font-weight: 800;
 font-size: 5em;
@@ -52,12 +47,29 @@ text-transform: uppercase;
 padding: 0.5em 0;
 text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
-
 h1 small, h2 small, h3 small, h4 small {
 text-transform: none;
 font-size: 0.5em;
 font-weight: 400;
 color: inherit;
+}
+a.brand {
+  max-width: 210px;
+}
+.navbar .brand{
+  padding:8px 10px;
+}
+@media (max-width: 768px) {
+  .navbar .brand{
+    padding: 5px 10px;
+  }
+  a.brand{
+    text-align: center;
+    max-width: 170px;
+  }
+  .navbar .btn-navbar{
+    margin-top: 5px;
+  }
 }
 
 /****** Main Menu style ******/
@@ -120,8 +132,7 @@ body{
       max-width: 150px;
    }
 }
-/** Menu Styles end **/
-
+/***** Menu Styles end *****/
 
 .slides-container .container{
 	top: 40%;
@@ -726,7 +737,7 @@ p.main-description{
 }
 .descpad{
   padding: 2.5em 1em;
-  border-bottom:1px solid #AAA;
+  border-bottom:1px solid #C0C0C0;
 }
 .title-pad{
   margin-bottom: 1.8em;
