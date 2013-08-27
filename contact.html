@@ -15,18 +15,18 @@
     <![endif]-->
   </head>
   <body>
-      <!-- Header Styling-->
-      <div class="navbar navbar-fixed-top">
+    <!-- Header Styling-->
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <a href="index.html" class="navbar-brand logo"><img src="logo.png"></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <a href="../" class="navbar-brand logo"><img src="logo.png"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <div class="nav-collapse collapse navbar-responsive-collapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
           <!-- THE MENU STARTS HERE -->
-          <div class="mgmenu_container hidden-sm">
+          <div class="mgmenu_container hidden-xs hidden-sm">
             <!-- Begin Mega Menu Container -->
             <ul class="mgmenu">
               <!-- Button (Mobile Devices) -->
@@ -128,20 +128,17 @@
             <!-- End Mega Menu -->
           </div>
           <!-- THE MENU ENDS HERE -->
-          <ul class="nav navbar-nav visible-sm">
+          <ul class="nav navbar-nav visible-sm visible-xs navbar-right">
             <li class="center"><a href="#">Solutions</a></li>
             <li class="center"><a href="#">Developers</a></li>
             <li class="center"><a href="#">Company</a></li>
             <li class="center"><a href="#">Contact</a></li>
           </ul>
         </div>
-        <ds
-
         <!-- /.nav-collapse -->
       </div>
     </div>
     <!--Navbar closed-->
-      <!--Header Ends Here-->
     <!--Content will starts from here-->
     <div class="slide" id="contact">
       <div class="container">
@@ -150,14 +147,31 @@
         </div>
       </div>
     </div>
-    <div class="container drop-mail">
-      <h1>Drop us a line about what’s spinning your wheels and we will find a solution</h1>
-    </div>
-    <div>
-      <div class="container" id="padbottom">
+    <div class="bg-white">
+    <div class="container">
+      <div class="row" id="successmessage">
+          <div class="col-lg-3 center">
+                <i class="icon-ok-circle"></i>
+              </div>
+              <div class="col-lg-9">
+                <p class="thank-you">Thank You for getting in touch with us. Our solution experts will contact you shortly. We are looking forward to be associated with you.</p>
+                <h3><i class="icon-phone"></i> &nbsp;&nbsp;<span> <a href="tel:+1 813 793-6736">+1 813 793-6736 (OPEN) </a></span><br><i class="icon-envelope"></i>&nbsp;&nbsp; <span><a href="mailto:sales@openlabs.co.in">sales@openlabs.co.in</a></span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="container padbottom" id="contactformdiv" >
+        <div class="row">
+          <h1 class="contact-no">Call us on <a href="tel:+18137936736">
+            <span>+1 813.793.OPEN </span></a>or email us at <span><a href="mailto:sales@openlabs.co.in">sales@openlabs.co.in</a>
+            </span>
+          </h1>
+        </div>
+        <div class="row drop-mail">
+          <h1>Drop us a line about what you need and we will find a way to accomplish it.</h1>
+        </div>
         <div class="row contact-us">
           <div class="col-lg-10">
-            <form class="form-horizontal" id="formname">
+            <form class="form-horizontal" id="contactform" action="{{ url_for('sale.opportunity.new_opportunity') }}">
               <fieldset>
                 <div class="row">
                   <div class="col-lg-6">
@@ -165,21 +179,18 @@
                       <div class="input-wrapper">
                         <i class="icon-user"></i>
                         <input type="text" class="col-lg-11"  placeholder="Your Name" name="name">  
-                        <span class="help-inline">Hello there !</span>     
                       </div> 
                     </div>
                     <div class="input-container">
                       <div class="input-wrapper ">
                         <i class="icon-envelope-alt"></i>
-                        <input type="text" class="col-lg-11" placeholder="john@doe.com" id="email" name="email" >
-                        <span class="help-inline">Hello there !</span>                             
+                        <input type="text" class="col-lg-11" placeholder="john@doe.com" id="email" name="email" >                         
                       </div>
                     </div>
                     <div class="input-container">
                       <div class="input-wrapper">
-                        <img src="img/company.png">
-                        <input type="text" class="col-lg-11" placeholder="Company Name" name="companyname">
-                        <span class="help-inline">Hello there !</span>     
+                        <img src="{{ static_root }}img/company.png">
+                        <input type="text" class="col-lg-11" placeholder="Company Name" name="company">
                       </div>
                     </div>
                   </div>
@@ -187,14 +198,15 @@
                     <div class="input-container">
                       <div class="input-wrapper">
                         <i class="icon-pencil"></i>
-                        <textarea rows="8" class="col-lg-12" placeholder="your enquiry" ></textarea>
+                        <textarea rows="7" class="col-lg-12" placeholder="What are you looking to achieve? How much time do you have? Have you thought of a budget? The more details you furnish, the better we understand your request." name="comment" ></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row pull-right">
-                  <div class="input-conatiner ">
-                    <button type="submit" class="btn btn-large btn-info " id="btn-sumbit" tabindex="4"><i class="icon-location-arrow"></i>&nbsp; Let's make things happen</button>
+                <div class="row">
+                  <div class="input-conatiner pull-right">
+                    <button type="submit" class="btn-submit btn-flat btn-rounded" id="btn-sumbit" tabindex="4"><i class="icon-rocket"></i>&nbsp; Let's make things happen
+                    </button>
                   </div>
                 </div>
               </fieldset>
@@ -202,7 +214,7 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
     <footer>
       <div class="container">
         <div class="row white">
@@ -210,7 +222,7 @@
             <a href="">News</a>
           </div>
           <div class="col-lg-2">
-            <a href="">We are hiring !!</a>
+            <a href="">We are hiring</a>
           </div>
           <div class="col-lg-1 ">
             <a href="">About</a>
@@ -229,6 +241,56 @@
         </div>
         <hr>
         <div class="row">
+          <div class="col-lg-3">
+            <div itemscope itemtype="http://schema.org/Organization" itemref="openlabs-address">
+              <span itemprop="name" class="hide">Openlabs Technology & Consulting Pvt. Ltd.</span> 
+              <div  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">   
+              <span itemprop="addressLocality"><strong>Noida</strong></span><br>
+                <span itemprop="streetAddress">SDF L-12(A), <br>Noida Special Economic Zone <br>
+                (NSEZ), Phase II, <br>Noida - 201306</span>, <span itemprop="addressRegion">U.P</span>, India<br>
+              <abbr title="Phone"><i class="icon-phone"></i></abbr> <a class="phone-no" href="tel:+91 120 6455161">&nbsp;<span itemprop="telephone">+ 91 120 6455161 </span></a>
+              </div>
+            </div>
+          </div>          
+          <div class="col-lg-3">
+            <div itemscope itemtype="http://schema.org/Organization" itemref="openlabs-address">
+              <span itemprop="name" class="hide">Openlabs Technology & Consulting Pvt. Ltd.</span> 
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">   
+                <span itemprop="addressLocality"><strong>Kerala</strong></span><br>
+                <span itemprop="streetAddress">2J-Skyline Daffodi,<br> Petta,Tripunithura,<br>
+                Kochi-682301</span>, <br>
+                <span itemprop="addressRegion">Kerala</span>, India<br>
+                <abbr title="Phone"><i class="icon-phone"></i></abbr> <a class="phone-no" href="tel:+91 120 6455161" >&nbsp;<span itemprop="telephone">+ 91 120 6455161</span> </a>
+              </div>
+            </div>
+          </div>          
+          <div class="col-lg-3">
+            <div itemscope itemtype="http://schema.org/Organization" itemref="openlabs-address">
+              <span itemprop="name" class="hide">Openlabs Technology & Consulting Pvt. Ltd.</span>
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+                <span  itemprop="addressLocality"><strong>London</strong></span>, <span itemprop="addressRegion"><strong>UK</strong></span><br>
+                <abbr title="Phone"><i class="icon-phone"></i></abbr> <a class="phone-no" href="tel:+44 20 35145427"> &nbsp;<span itemprop="telephone"> +44 20 35145427</span></a><br><br>
+              </div>
+            </div>
+            <div itemscope itemtype="http://schema.org/Organization" itemref="openlabs-address">
+              <span itemprop="name" class="hide">Openlabs Technology & Consulting Pvt. Ltd.</span>
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+                <span  itemprop="addressLocality"><strong>Miami</strong></span>, 
+                <span itemprop="addressRegion"><strong>FL</strong></span>, <strong>US</strong><br>
+                <abbr title="Phone"><i class="icon-phone"></i></abbr> <a class="phone-no" href="tel:+1 813 793-6736"> &nbsp; <span itemprop="telephone">+1 813 793-6736</span></a>
+              </div>
+            </div>
+          </div>          
+          <div class="col-lg-3">
+            <!-- Place this code where you want the badge to render. -->
+            <a href="https://plus.google.com/104308164983635831317?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+              <img src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="Google+" style="border:0;width:64px;height:64px;"/>
+            </a>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
           <div class="col-lg-6">
             <p>&copy; 2013 Openlabs All rights reserved | <a href="">Privacy Policy</a></p>
           </div>
@@ -238,21 +300,21 @@
         </div>
       </div>
     </footer>
-    <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type='text/javascript' src='js/bootstrap.min.js'></script>
     <script type='text/javascript' src="js/scripts.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
     <script>
-    $(document).ready(function() {
-     $("#formname").validate({
-        rules: {
-          email: {
-            required: true,
-            email: true
-          }
-        } 
+      $(document).ready(function() {
+       $("#formname").validate({
+          rules: {
+            email: {
+              required: true,
+              email: true
+            }
+          } 
+        });
       });
-   });
-  </script>
+    </script>
   </body>
 </html>

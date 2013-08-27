@@ -13,18 +13,18 @@
     <!--[if lt IE 9]><script src="/assets/js/html5shiv.js"></script><![endif]-->
   </head>
   <body>
-      <!-- Header Styling-->
-      <div class="navbar navbar-fixed-top">
+  	    <!-- Header Styling-->
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <a href="../" class="navbar-brand logo"><img src="logo.png"></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <div class="nav-collapse collapse navbar-responsive-collapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
           <!-- THE MENU STARTS HERE -->
-          <div class="mgmenu_container hidden-sm">
+          <div class="mgmenu_container hidden-xs hidden-sm">
             <!-- Begin Mega Menu Container -->
             <ul class="mgmenu">
               <!-- Button (Mobile Devices) -->
@@ -126,27 +126,25 @@
             <!-- End Mega Menu -->
           </div>
           <!-- THE MENU ENDS HERE -->
-          <ul class="nav navbar-nav visible-sm">
+          <ul class="nav navbar-nav visible-sm visible-xs navbar-right">
             <li class="center"><a href="#">Solutions</a></li>
             <li class="center"><a href="#">Developers</a></li>
             <li class="center"><a href="#">Company</a></li>
             <li class="center"><a href="#">Contact</a></li>
           </ul>
         </div>
-        <ds
-
         <!-- /.nav-collapse -->
       </div>
     </div>
     <!--Navbar closed-->
-      <!--Header Ends Here-->
+    <!--Header Ends Here-->
     <div class="wrap">
       <!--Content Will go here-->
       <div class="container">
         <div class="row">
           <ul class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Library</a></li>
+            <li><a href="#">Home</a> <span class="divider"></span></li>
+            <li><a href="#">Library</a> <span class="divider"></span></li>
             <li class="active">Open ERP Modules</li>
           </ul>
           <h2 class="logored">Open ERP Modules</h2>
@@ -180,9 +178,9 @@
           </div>   
         </div>
         <div class="row">
-            <ul class="pagination pagination-large pull-right">
-              <li class="disabled"><a href="#">«</a></li>
-              <li class="active"><a href="#">1</a></li>
+            <ul class="pagination pagination-lg pull-right">
+              <li class="dispabled"><a href="#">«</a></li>
+              <li><a href="#">1</a></li>
               <li ><a href="#">2</a></li>
               <li ><a href="#">3</a></li>
               <li ><a href="#">»</a></li>
@@ -226,7 +224,7 @@
       </div>
     </footer>  
     <!--Scripts Will start here -->
-    <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type='text/javascript' src="js/scripts.js"></script>
     <script type='text/javascript' src='js/bootstrap.min.js'></script>
   </body>
