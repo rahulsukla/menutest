@@ -286,7 +286,6 @@ margin: 0;
  * Grid items
  */
 #tiles li {
-width: 300px;
 -moz-border-radius: 2px;
 -webkit-border-radius: 2px;
 border-radius: 2px;
@@ -297,6 +296,9 @@ webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+#tiles li img{
+  max-width: 300px;
 }
 
 #tiles li img {
