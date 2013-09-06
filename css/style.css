@@ -397,7 +397,6 @@ box-sizing: border-box;
 .wrap{
   background-image: url('../img/slider/banner.jpg');
   background-attachment: fixed;
-  width: 100% !important;
   min-height:300px;
   padding-top:100px;
   padding-bottom: 60px;
