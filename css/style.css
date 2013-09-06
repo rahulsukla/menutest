@@ -396,7 +396,11 @@ box-sizing: border-box;
 
 /*******Article Page *****/
 .wrap{
-  background: url('../img/slider/banner.jpg');
+  background-image: url('../img/slider/banner.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-top:100px;
   padding-bottom: 60px;
 }
