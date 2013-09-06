@@ -779,8 +779,6 @@ content: '';
  }
 .noisy-net{
   background-image: url(../img/magento/magentobg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
 }
  .cloud{
   background: #fafafa;
@@ -824,9 +822,18 @@ p.main-description{
    border-bottom: 1px solid #e7e7e7
  }
  .descpad-top{
-  padding: 4em 0 4em 0;
+  padding: 4em 0;
   border-bottom: 1px solid #e7e7e7;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
  }
+@media (max-width: 767px){
+  .descpad img, .descpad-top img{
+    max-width: 350px;
+  }
+}
  .title-pad{
    margin-bottom: 1.8em;
  }
